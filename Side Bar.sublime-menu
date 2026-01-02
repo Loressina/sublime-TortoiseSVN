@@ -15,6 +15,7 @@
             { "caption": "Blame", "command": "svn_blame", "args": {"paths":[]}},
             { "caption": "Switch", "command": "svn_switch", "args": {"paths":[]}},
             { "caption": "Branch", "command": "svn_branch", "args": {"paths":[]}},
+            { "caption": "Lock", "command": "svn_lock", "args": {"paths":[]}},
 
         { "caption": "-" }
     ]},
