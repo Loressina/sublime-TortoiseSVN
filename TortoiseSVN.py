@@ -1,8 +1,10 @@
-import sublime
-import sublime_plugin
 import os
 import os.path
 import subprocess
+
+import sublime
+import sublime_plugin
+
 
 class TortoiseSvnCommand(sublime_plugin.WindowCommand):
     def run(self, cmd, paths=None, isHung=False):
@@ -11,8 +13,8 @@ class TortoiseSvnCommand(sublime_plugin.WindowCommand):
               if "${PROJECT_PATH}" in path:
                   project_data  = sublime.active_window().project_data()
                   project_folder = project_data['folders'][0]['path']
-                  path = path.replace("${PROJECT_PATH}", project_folder);
-                  paths[index] = path	
+                  path = path.replace("${PROJECT_PATH}", project_folder)
+                  paths[index] = path
         dir = self.get_path(paths)
 
         if not dir:
@@ -27,8 +29,7 @@ class TortoiseSvnCommand(sublime_plugin.WindowCommand):
                 ' please config setting file' '\n   --sublime-TortoiseSVN')
             raise
 
-        cmd = '"' + tortoiseproc_path + '"' + 
-            ' /command:' + cmd + ' /path:"%s"' % dir
+        cmd = f'"{tortoiseproc_path}" /command:{cmd}  /path:"{dir}"'
 
         proce = subprocess.Popen(cmd.encode(pathEncoding) if pathEncoding else cmd , stdout=subprocess.PIPE)
 
