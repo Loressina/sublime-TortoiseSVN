@@ -13,37 +13,20 @@
 						"children":
 						[
 							{
-								"caption": "Settings – Default",
-								"command": "open_file",
+								"caption": "Settings",
+								"command": "edit_settings",
 								"args":
 								{
-									"file": "${packages}/TortoiseSVN/TortoiseSVN.sublime-settings"
-								}
-							},
-							{
-								"caption": "Settings – User",
-								"command": "open_file",
-								"args":
-								{
-									"file": "${packages}/User/TortoiseSVN.sublime-settings"
+									"base_file": "${packages}/TortoiseSVN/TortoiseSVN.sublime-settings"
 								}
 							},
 							{ "caption": "-" },
 							{
-								"command": "open_file",
+								"caption": "Key Bindings",
+								"command": "edit_settings",
 								"args": {
-									"file": "${packages}/TortoiseSVN/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								},
-								"caption": "Key Bindings – Default"
-							},
-							{
-								"command": "open_file",
-								"args": {
-									"file": "${packages}/User/Default (Windows).sublime-keymap",
-									"platform": "Windows"
-								},
-								"caption": "Key Bindings – User"
+									"file": "${packages}/TortoiseSVN/Default (Windows).sublime-keymap"
+								}
 							}
 						]
 					}
