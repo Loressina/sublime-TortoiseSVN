@@ -132,3 +132,7 @@ class SvnBranchCommand(TortoiseSvnCommand):
 class SvnLockCommand(TortoiseSvnCommand):
     def run(self, paths=None):
         TortoiseSvnCommand.run(self, 'lock', paths)
+
+class SvnRepobrowserCommand(TortoiseSvnCommand):
+    def run(self, paths=None):
+        TortoiseSvnCommand.run(self, 'repobrowser', paths)
