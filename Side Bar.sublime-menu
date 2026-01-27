@@ -16,6 +16,7 @@
             { "caption": "Switch", "command": "svn_switch", "args": {"paths":[]}},
             { "caption": "Branch", "command": "svn_branch", "args": {"paths":[]}},
             { "caption": "Lock", "command": "svn_lock", "args": {"paths":[]}},
+            { "caption": "Repo Status", "command": "svn_repostatus", "args": {"paths":[]}},
             { "caption": "Repo Browser", "command": "svn_repobrowser", "args": {"paths":[]}},
 
         { "caption": "-" }
