@@ -133,10 +133,17 @@ class SvnLockCommand(TortoiseSvnCommand):
     def run(self, paths=None):
         TortoiseSvnCommand.run(self, 'lock', paths)
 
+
 class SvnRepobrowserCommand(TortoiseSvnCommand):
     def run(self, paths=None):
         TortoiseSvnCommand.run(self, 'repobrowser', paths)
 
+
 class SvnRepostatusCommand(TortoiseSvnCommand):
     def run(self, paths=None):
         TortoiseSvnCommand.run(self, 'repostatus', paths)
+
+
+class SvnCleanupCommand(TortoiseSvnCommand):
+    def run(self, paths=None):
+        TortoiseSvnCommand.run(self, 'cleanup', paths)
