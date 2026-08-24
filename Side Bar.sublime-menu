@@ -15,6 +15,7 @@
             { "caption": "Blame", "command": "svn_blame", "args": {"paths":[]}},
             { "caption": "Switch", "command": "svn_switch", "args": {"paths":[]}},
             { "caption": "Branch", "command": "svn_branch", "args": {"paths":[]}},
+            { "caption": "Merge", "command": "svn_merge", "args": {"paths":[]}},
             { "caption": "Lock", "command": "svn_lock", "args": {"paths":[]}},
             { "caption": "Cleanup", "command": "svn_cleanup", "args": {"paths":[]}},
             { "caption": "Repo Status", "command": "svn_repostatus", "args": {"paths":[]}},
