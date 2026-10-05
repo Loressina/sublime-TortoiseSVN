@@ -18,6 +18,7 @@
             { "caption": "Merge", "command": "svn_merge", "args": {"paths":[]}},
             { "caption": "Lock", "command": "svn_lock", "args": {"paths":[]}},
             { "caption": "Cleanup", "command": "svn_cleanup", "args": {"paths":[]}},
+            { "caption": "Create Patch", "command": "svn_create_patch", "args": {"paths":[]}},
             { "caption": "Repo Status", "command": "svn_repostatus", "args": {"paths":[]}},
             { "caption": "Repo Browser", "command": "svn_repobrowser", "args": {"paths":[]}},
 

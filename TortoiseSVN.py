@@ -146,6 +146,11 @@ class SvnRepobrowserCommand(TortoiseSvnCommand):
         TortoiseSvnCommand.run(self, "repobrowser", paths)
 
 
+class SvnCreatePatchCommand(TortoiseSvnCommand):
+    def run(self, paths=None):
+        TortoiseSvnCommand.run(self, "createpatch", paths)
+
+
 class SvnRepostatusCommand(TortoiseSvnCommand):
     def run(self, paths=None):
         TortoiseSvnCommand.run(self, "repostatus", paths)
